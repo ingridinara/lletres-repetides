@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content=" Alumna Ingrid Inara">
+    <meta name="description" content=" Ejercicio3">
+    <meta name="keywords" content=" ">
+    <title>Ejercicio3</title>
+    
+    <script>
+
+//opcion con array, sin map:
+
+// declarar array con nombre
+var nombre = ["I","N","G","R","I","D"];
+ 
+
+// contadores de cada letra
+// empiezan en 0 
+var contdeI = 0;
+
+var contdeN = 0;
+
+var contdeG = 0;
+
+var contdeR = 0;
+
+var contdeR = 0;
+
+var contdeD = 0;
+
+
+// funcion para contar cantidad de veces que
+// aparece cada letra
+function contar( ) {
+
+for(var i = 0; i < nombre.length; i++) {
+    if (nombre[i].toLowerCase() === "i") 
+        {
+        contdeI ++;
+        
+        }  
+           
+        
+
+    
+    else if (nombre[i].toLowerCase() === "n") {
+        contdeN ++;
+    } 
+           
+
+
+    else if (nombre[i].toLowerCase() === "g") {
+        contdeG ++;
+    } 
+          
+
+    else if (nombre[i].toLowerCase() === "r") {
+        contdeR ++;
+    } 
+         
+
+    else if (nombre[i].toLowerCase() === "d") {
+        contdeD ++;
+    } 
+      
+    else { console.log("algo no funciona"); }
+
+
+} 
+
+{
+           
+    console.log( "I:"  + contdeI  );
+    console.log( "N:"  + contdeN  );
+    console.log( "G:"  + contdeG  );
+    console.log( "R:"  + contdeR  );
+    console.log( "D:"  + contdeD  );
+
+
+}
+
+}
+
+
+// variable que almacena el resultado de la funcion
+// y ejecuta
+var contador = contar();
+
+
+// imprimir en pantalla 
+console.log(contador); 
+
+
+
+
+
+
+    </script>
+<body>
+    
+</body>
+</html>

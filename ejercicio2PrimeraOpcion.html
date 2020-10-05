@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- character encoding -->
+    <meta charset="UTF-8" />
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- author -->
+    <meta name="author" content=" Alumna Ingrid Inara" />
+    <!-- description -->
+    <meta name="description" content= " " />
+    <!-- keywords -->
+    <meta name="keywords" content=" " />
+    <title>Lletres Repetides Ejercicio 2</title>
+
+    <script>
+
+// 1 - declarar array nombre y numero 
+var nom = ['I', 'N', 'G', 'R', 'I', 'D', '3'];
+// 2 - declarar array vacio texto
+//donde se van a inserir los textos
+var text = [];
+
+
+// 3 - crear función con bucle y condicional
+function frase() {
+    // debugger;
+  for (var i = 0; i < nom.length; i++) {
+if (nom[i] == nom[0]) {
+        // inserimos el texto en el array vacio texto. 
+      text.push('He trobat la VOCAL: ' + nom[i]);
+    }
+
+    // Duda porque no funciona el nom sin [] como en archivo test !!!
+     else if (nom[i] == nom[1]  ) {
+    text.push('He trobat la CONSONANT:' + nom[i]);
+    }  
+    
+    else if (nom[i] ==  nom[2] ) {
+    text.push('He trobat la CONSONANT: ' + nom[i]);
+    }  
+
+    else if (nom[i] == nom[3] ) {
+    text.push('He trobat la CONSONANT: ' + nom[i]);
+    }  
+
+    else if (nom[i] == nom[1]  ) {
+    text.push('He trobat la CONSONANT: ' + nom[i]);
+    }  
+
+    else if (nom[i] == nom[5]) {
+    text.push('He trobat la CONSONANT: ' + nom[i]);
+    }  
+
+    else if (nom[i] == nom[6] ) {
+        text.push('Els noms de persones no contienen el numero: ' + nom[i]);
+    } 
+    else {
+     
+    } 
+  }
+}
+
+
+// 4- llama a la funcion/ ejecutar la funcion
+frase();
+
+// 5- que imprima en la consola la info del array text
+console.log(text);  
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

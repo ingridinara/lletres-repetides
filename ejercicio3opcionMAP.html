@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="alumna Ingrid Inara">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">    
+    <title>Ejercicio 3</title>
+
+    <script>
+
+// objeto vacio que va almacenar valores de la respuesta    
+const returnObject = {};
+// declaracions de nombre
+var nombre = "INGRID";
+//dividir el string nombre en letras
+var nom = nombre.split('');
+
+//almacenar en dates la info de nom con un map
+// y aplicar la funcion character
+var dates = nom.map(function(character){
+    // si el objeto tiene la propiedad character, somar +1
+    // si no, es que aparece solo una vz y parar en 1 
+    if (returnObject.hasOwnProperty(character)) {
+        returnObject[character] += 1;
+
+    } else {
+        returnObject[character] = 1;
+    }
+});
+
+
+// enseñar objeto por consola
+console.log(returnObject);
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+
+
+
+    
+</body>
+</html>
